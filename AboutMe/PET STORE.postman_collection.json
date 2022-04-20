@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "6cca42b4-13d6-4267-83ac-e2e9bc6aea27",
+		"name": "PET STORE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add a new pet to the store id1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// get the request body \r",
+							"var req_data1 = JSON.parse(pm.request.body.raw); \r",
+							"// set a variable for the data used in the request \r",
+							"pm.environment.set(\"pet_data1\", req_data1); \r",
+							"// set a variable for the pet_id \r",
+							"pm.environment.set(\"pet_id1\", req_data1.id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(pm.environment.get('pet_data1'));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"category\": {\r\n        \"id\": 2,\r\n        \"name\": \"Pasari exotice\"\r\n    },\r\n    \"name\": \"Marko\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 6,\r\n            \"name\": \"Papagali\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pet",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET pet by id1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(pm.environment.get('pet_data1'));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pet/{{pet_id1}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pet",
+						"{{pet_id1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new pet to the store id2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// get the request body \r",
+							"var req_data2 = JSON.parse(pm.request.body.raw); \r",
+							"// set a variable for the data used in the request \r",
+							"pm.environment.set(\"pet_data2\", req_data2); \r",
+							"// set a variable for the pet_id \r",
+							"pm.environment.set(\"pet_id2\", req_data2.id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(pm.environment.get('pet_data2'));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"category\": {\r\n        \"id\": 2,\r\n        \"name\": \"Animale\"\r\n    },\r\n    \"name\": \"Maya\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 6,\r\n            \"name\": \"caini\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pet",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET pet by id2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(pm.environment.get('pet_data2'));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pet/{{pet_id2}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pet",
+						"{{pet_id2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update pet id1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// get the request body \r",
+							"var upd_data1 = JSON.parse(pm.request.body.raw); \r",
+							"// set a variable for the data used in the request \r",
+							"pm.environment.set(\"pet_upd_data1\", upd_data1); \r",
+							"// set a variable for the pet_id \r",
+							"pm.environment.set(\"pet_upd_id1\", upd_data1.id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(pm.environment.get('pet_upd_data1'));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"category\": {\r\n        \"id\": 69,\r\n        \"name\": \"Rozatoare\"\r\n    },\r\n    \"name\": \"Mickey Mouse\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 66,\r\n            \"name\": \"Soareci\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pet",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update pet id2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// get the request body \r",
+							"var upd_data2 = JSON.parse(pm.request.body.raw); \r",
+							"// set a variable for the data used in the request \r",
+							"pm.environment.set(\"pet_upd_data2\", upd_data2); \r",
+							"// set a variable for the pet_id \r",
+							"pm.environment.set(\"pet_upd_id2\", upd_data2.id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(pm.environment.get('pet_upd_data2'));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"category\": {\r\n        \"id\": 66,\r\n        \"name\": \"Animale salbatice\"\r\n    },\r\n    \"name\": \"Lion\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 66,\r\n            \"name\": \"Feline\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pet",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE pet1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"category\": {\r\n        \"id\": 66,\r\n        \"name\": \"Pasari exotice\"\r\n    },\r\n    \"name\": \"Marko\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 23,\r\n            \"name\": \"Papagali\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pet/{{pet_id1}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pet",
+						"{{pet_id1}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
