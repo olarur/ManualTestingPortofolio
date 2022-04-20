@@ -90,7 +90,7 @@ An intensive course about manual testing with Iulia Albu.
 
 ### Bug reports in Jira
 
-- Several bugs found on [https://opensource-demo.orangehrmlive.com], [https://demoqa.com/automation-practice-form/], [https://academybugs.com]. Check [pdf](https://github.com/olarur/ManualTestingPortofolio/blob/19d94b7c04b07f4d40891f865127af49e5f85f92/AboutMe/All_bugs.pdf).
+- Several bugs found on https://opensource-demo.orangehrmlive.com, https://demoqa.com/automation-practice-form/, https://academybugs.com. Check [pdf](https://github.com/olarur/ManualTestingPortofolio/blob/19d94b7c04b07f4d40891f865127af49e5f85f92/AboutMe/All_bugs.pdf).
   * Bug #1 example. Check [the screenshot of a bug report in Jira](https://github.com/olarur/ManualTestingPortofolio/blob/19d94b7c04b07f4d40891f865127af49e5f85f92/AboutMe/bug_report.jpg).
 
 ### API tests in Postman
