@@ -84,7 +84,8 @@ An intensive course about manual testing with Iulia Albu.
 
 ### Test Cases and work in Jira
 
-  * [examples of test cases](https://github.com/olarur/ManualTestingPortofolio/blob/431a4e522953cffb1dc1bf5e0d08652e55f8b4f6/AboutMe/all_test_cases_with_steps.pdf)
+  * [examples of test cases without steps](https://github.com/olarur/ManualTestingPortofolio/blob/ef374b332071cc0982eaf894559bbc1548241802/AboutMe/all_test_cases_without%20steps.pdf)
+  * [examples of test cases with steps](https://github.com/olarur/ManualTestingPortofolio/blob/431a4e522953cffb1dc1bf5e0d08652e55f8b4f6/AboutMe/all_test_cases_with_steps.pdf)
   * [example of cycle summary](https://github.com/olarur/ManualTestingPortofolio/blob/431a4e522953cffb1dc1bf5e0d08652e55f8b4f6/AboutMe/cycle_summary.jpg)
 
 ### Bug reports in Jira
