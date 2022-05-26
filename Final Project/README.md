@@ -190,7 +190,7 @@ Bugs list:
 ![image](https://user-images.githubusercontent.com/103954630/170478653-b6819cf9-9dda-47b1-9ca6-954e5da4e1a9.png)
 
 
-Tracebility matrix examples per story 
+Tracebility matrix examples per story: 
 
 ![tracebility_matrix_Work_experience_story](https://user-images.githubusercontent.com/103954630/170475630-0c10d5db-fbfe-4e40-b7a6-9e1ca8cbd90b.jpg)
 
