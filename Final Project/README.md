@@ -181,6 +181,10 @@ Bugs list:
    *  User is allowed to type date into "From" field.
    *  [Documentation issue] - Qualification section
     
+Bug report example : 
+
+![image](https://user-images.githubusercontent.com/103954630/170499873-cf04787d-9728-437a-8dc5-d41aaff84afd.png)
+
 
 ## 1.7 Test Completion
 
