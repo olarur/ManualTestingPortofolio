@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>ZFJ - Html Report for Executions</title>
+        <script type="text/javascript">
+        function altRows ( id ) {
+            if ( document.getElementsByTagName ) {
+                var table = document.getElementById ( id ) ;
+                var rows = table.getElementsByTagName ( "tr" ) ;
+                for ( i = 0 ; i < rows.length ; i ++ ) {
+                    if ( i % 2 == 0 ) {
+                        rows[ i ].className = "evenrowcolor" ;
+                    } else {
+                        rows[ i ].className = "oddrowcolor" ;
+                    }
+                }
+            }
+        }
+        window.onload = function ( ) {
+            altRows ( 'alternatecolor' ) ;
+        }
+        </script>
+        <style type="text/css">
+        table.altrowstable {
+            font-family : verdana, arial, sans-serif ;
+            font-size : 9px ;
+            padding-left : 50px ;
+            color : #333333 ;
+            border-width : 1px ;
+            border-color : #a9c6c9 ;
+            border-collapse : collapse ;
+        }
+        table.altrowstable th {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        table.altrowstable thead {
+            font-weight : bold ;
+        }
+        table.altrowstable td {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        .oddrowcolor {
+            background-color : #d4e3e5 ;
+        }
+        .evenrowcolor {
+            background-color : none ;
+        }
+        </style>
+    </head>
+    <body>
+
+        <table class="altrowstable" id="alternatecolor" border="1" cellspacing="0" cellpadding="0" style="padding-left : 50 px ; overflow-y = scroll ;">
+            <thead>
+                <th>ExecutionId</th>
+                <th>Cycle</th>
+                <th>Folder Name</th>
+                <th>Issue Key</th>
+                <th>Test Summary</th>
+                <th>Project</th>
+                <th>Component</th>
+                <th>Version</th>
+                <th>Priority</th>
+                <th>Executed By</th>
+                <th>Executed On</th>
+                <th>Execution Status</th>
+                <th>Execution Defect(s)</th>
+                <th>Creation Date</th>
+                <th>Assigned To</th>
+                <th>Execution Custom Field</th>
+                <th>Work Flow Status</th>
+                <th>Total Execution Time</th>
+                <th>Total Logged Time</th>
+                <th>StepId</th>
+                <th>OrderId</th>
+                <th>Step</th>
+                <th>Test Data</th>
+                <th>Expected Result</th>
+                <th>Step Result</th>
+                <th>Comment</th>
+                <th>Test Step Custom Field</th>
+            </thead>
+            <tbody>
+            
+                
+                    <tr>
+                        <td rowspan="1">edbd8fe9-edf3-47d2-bdae-67d5313b98ca</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-152</td>
+                        <td rowspan="1">[GET] - Education when at least one entry registered</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:49:48</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>a0e45a5e-bf5a-4bde-8d76-801db30d3023</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check GET "Education when at least one entry registered" .</p></td>
+                            <td></td>
+                            <td><p>HTTP/1.1 200 OK</p><p>{</br>    "data": [</br>        {</br>            "seqId": "12",</br>            "level": "Master's Degree",</br>            "institute": "Lucian Blaga",</br>            "specialization": "Economics",</br>            "year": null,</br>            "fromDate": "2007-10-03",</br>            "toDate": "2009-07-02",</br>            "gpa": "7.8"</br>        }</br>    ]</br>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">cc684c34-2831-4a06-8796-6b00fbcc5928</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-150</td>
+                        <td rowspan="1">[GET] - Education when no entries are registered</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:51:30</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>cc316b54-c693-4d5c-8b4d-41a209eca862</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check GET "Education when no entries are registered" .</p></td>
+                            <td></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Not Found"</br>}</br>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">b2cd3736-c740-40e6-bc86-1da24764dd4c</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-155</td>
+                        <td rowspan="1">[POST] - ADD employee education when level education missing</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:52:23</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>5b588b57-3ab0-42c0-875e-bb579a243625</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check POST "ADD employee education when level education missing" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "level":null,</br>    "institute": "Transilvania",</br>    "startDate": "2011-10-02",</br>    "endDate": "2016-06-24",</br>    "specialization": "Engeneering",</br>    "gpa": "8.5"</br>}</p></td>
+                            <td><p>HTTP/1.1 400 Bad Request</br>{</br>    "error": [</br>        "Employee Education Level Not Found"</br>    ]</br>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">ad49bc4a-e248-4f32-96e2-85c8d05c6d0f</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-151</td>
+                        <td rowspan="1">[POST] - ADD employee education</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:52:40</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>a5cd60ec-0f08-4b64-85f6-22c64cbe4f78</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check POST "ADD employee education" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "level":3,</br>    "institute": "Lucian Blaga",</br>    "startDate": "2007-10-03",</br>    "endDate": "2009-07-02",</br>    "specialization": "Economics",</br>    "gpa": "7.8"</br>}</p></td>
+                            <td><p>HTTP/1.1 200 OK</p><p>{</p><p>"success":"Successfully Saved",</br>"seqId":&#60;current id&#62;</p><p>}</br>    ]</br>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">aa90e968-fedc-475f-a82d-85cf4ca85d02</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-154</td>
+                        <td rowspan="1">[POST] - ADD employee education when level education is a string</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:53:13</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>c8c08b0c-094b-4367-9f0d-69866ae9197e</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check POST "ADD employee education when level education is a string" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "level":"High School Diploma",</br>    "institute": "Lucian Blaga",</br>    "startDate": "2007-10-03",</br>    "endDate": "2011-07-02",</br>    "specialization": "Math",</br>    "gpa": "7.8"</br>}</p></td>
+                            <td><p>HTTP/1.1 400 Bad Request</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">83a9c71e-83fb-4d46-b1d1-dbb47f1abc8f</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-156</td>
+                        <td rowspan="1">[DELETE] - Employee education</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:53:29</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>5da3e880-74e6-4ae8-afbd-1d77dec75a06</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check  "DELETE employee education" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "seqId":{{seqId}}</br>}</p></td>
+                            <td><p>HTTP/1.1 200 OK</br>{</p><p>"success":"Successfully Deleted"</p><p>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">464a8c7c-2985-487c-86a8-c732986929be</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-157</td>
+                        <td rowspan="1">[DELETE] - Employee education when user not found</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:55:48</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-148,FPR-54 | FPR-148,FPR-54</td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>be5ee28d-fbf9-4bea-a0e7-14f777e48812</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check  "DELETE employee education when user not found" .</p></td>
+                            <td><p>{</br>    "id": 879895656,</br>    "seqId":{{seqId}}</br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td><p>Status code is 404 | AssertionError: expected response to have status code 404 but got 400</br>Employee Not Found | AssertionError: expected '{"error":["Deleting Failed"]}' to include 'Employee Not Found'</p></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">5c0d6788-3c1e-4483-b8c9-a6456229304e</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-158</td>
+                        <td rowspan="1">[DELETE] - Employee education when record not found</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:54:00</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-148,FPR-54 | FPR-54,FPR-148</td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>9a661e71-3224-4a39-a42e-ba4c459a16cd</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check  "DELETE employee education when record not found" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "seqId": null</br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Education Record Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td><p>Status code is 404 | AssertionError: expected response to have status code 404 but got 400</br>Employee Education Record Not Found | AssertionError: expected '{"error":["Deleting Failed"]}' to include 'Employee Education Record Not Found'</p></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">e0cb7a15-75d7-4755-ba3a-52914a8b56b9</td>
+                        <td rowspan="1">API education testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-153</td>
+                        <td rowspan="1">[POST] - ADD employee education when employee id not found</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-25-2022 17:50:32</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-52 | FPR-52</td>
+                        <td rowspan="1">05-25-2022 17:48:24</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>e5d9b771-1581-4328-a2ba-aad8562fa779</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check POST "ADD employee education when employee id not found" .</p></td>
+                            <td><p>{</br>    "id": 89655,</br>    "level":1,</br>    "institute": "Transilvania",</br>    "startDate": "2011-10-02",</br>    "endDate": "2016-06-24",</br>    "specialization": "Engeneering",</br>    "gpa": "8.5"</br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td><p>Status code is 404. employee id not found | AssertionError: expected response to have status code 404 but got 200</p></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>ZFJ - Html Report for Executions</title>
+        <script type="text/javascript">
+        function altRows ( id ) {
+            if ( document.getElementsByTagName ) {
+                var table = document.getElementById ( id ) ;
+                var rows = table.getElementsByTagName ( "tr" ) ;
+                for ( i = 0 ; i < rows.length ; i ++ ) {
+                    if ( i % 2 == 0 ) {
+                        rows[ i ].className = "evenrowcolor" ;
+                    } else {
+                        rows[ i ].className = "oddrowcolor" ;
+                    }
+                }
+            }
+        }
+        window.onload = function ( ) {
+            altRows ( 'alternatecolor' ) ;
+        }
+        </script>
+        <style type="text/css">
+        table.altrowstable {
+            font-family : verdana, arial, sans-serif ;
+            font-size : 9px ;
+            padding-left : 50px ;
+            color : #333333 ;
+            border-width : 1px ;
+            border-color : #a9c6c9 ;
+            border-collapse : collapse ;
+        }
+        table.altrowstable th {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        table.altrowstable thead {
+            font-weight : bold ;
+        }
+        table.altrowstable td {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        .oddrowcolor {
+            background-color : #d4e3e5 ;
+        }
+        .evenrowcolor {
+            background-color : none ;
+        }
+        </style>
+    </head>
+    <body>
+
+        <table class="altrowstable" id="alternatecolor" border="1" cellspacing="0" cellpadding="0" style="padding-left : 50 px ; overflow-y = scroll ;">
+            <thead>
+                <th>ExecutionId</th>
+                <th>Cycle</th>
+                <th>Folder Name</th>
+                <th>Issue Key</th>
+                <th>Test Summary</th>
+                <th>Project</th>
+                <th>Component</th>
+                <th>Version</th>
+                <th>Priority</th>
+                <th>Executed By</th>
+                <th>Executed On</th>
+                <th>Execution Status</th>
+                <th>Execution Defect(s)</th>
+                <th>Creation Date</th>
+                <th>Assigned To</th>
+                <th>Execution Custom Field</th>
+                <th>Work Flow Status</th>
+                <th>Total Execution Time</th>
+                <th>Total Logged Time</th>
+                <th>StepId</th>
+                <th>OrderId</th>
+                <th>Step</th>
+                <th>Test Data</th>
+                <th>Expected Result</th>
+                <th>Step Result</th>
+                <th>Comment</th>
+                <th>Test Step Custom Field</th>
+            </thead>
+            <tbody>
+            
+                
+                    <tr>
+                        <td rowspan="1">58d950af-c93b-468b-b5a8-e5b7b0d9b30e</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-31</td>
+                        <td rowspan="1">[GET] - Work experience when no entries are registered</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 21:42:00</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>7be5ab9c-fd91-4558-80e7-1737520a71c3</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check GET "work experience when no entries are registered" .</p></td>
+                            <td></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Not Found"</br>}</br>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">97d2c259-123b-4868-a1e2-6733b2bb37b5</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-33</td>
+                        <td rowspan="1">[POST] - Add work experience</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 21:47:00</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>8e8eb710-ba52-4ed4-83c9-0565da194825</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check POST "ADD employee work experience" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "company": "Company 011",</br>    "title": "QA Tester",</br>    "fromDate": "2022-04-01",</br>    "toDate": "2024-12-24",</br>    "comment": "work experience current work"  </br>}</p></td>
+                            <td><p>HTTP/1.1 200 OK</p><p>{</p><p>"success":"Successfully Saved",</br>"seqId":&#60;current id&#62;</p><p>}</br>    ]</br>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">3f4b237d-4c3e-476c-a4bb-b111f03f2cdf</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-44</td>
+                        <td rowspan="1">[PUT] - EDIT employee work experience</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 22:17:17</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>bfb0173d-85a5-432e-8a01-a92f73c69da6</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check PUT "EDIT employee work experience" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "seqId":<tt> seqId</tt>,</br>    "company": "Company 011",</br>    "title": "QA Tester",</br>    "fromDate": "2022-04-01",</br>    "toDate": "2024-12-24",</br>    "comment": "work experience current work"  </br>}</p></td>
+                            <td><p>HTTP/1.1 200 OK</p><p>{</p><p>"success":"Successfully Updated"</p><p>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">6b818e24-0828-4c28-8a58-a4c48cfa9831</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-45</td>
+                        <td rowspan="1">[PUT] - EDIT employee work experience when user Id not existing</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 22:17:48</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-53 | FPR-53</td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>0e256947-93fb-4e6b-bcd6-3d6385ffd337</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check PUT "EDIT employee work experience when user Id not existing" .</p></td>
+                            <td><p>{</br>    "id": "a885478",</br>    "seqId":<tt> seqId</tt>,</br>    "company": "Company 011",</br>    "title": "QA Tester",</br>    "fromDate": "2022-04-01",</br>    "toDate": "2024-12-24",</br>    "comment": "work experience current work"  </br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">c5b1c592-c5f8-4e83-bc75-4bb659c601d0</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-47</td>
+                        <td rowspan="1">[DELETE] - DELETE employee work experience</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 22:29:10</td>
+                        <td rowspan="1">PASS</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>c4d43834-ce7a-4565-b7bb-d409c90c9807</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check DELETE "DELETE employee work experience" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "seqId":{{seqId}}</br>}</p></td>
+                            <td><p>HTTP/1.1 200 OK</p><p>{</p><p>"success":"Successfully Deleted"</p><p>}</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">7efd00f3-9b6d-43c0-b786-e9b40d57d950</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-32</td>
+                        <td rowspan="1">[GET] - Work experience when at least one entry registered</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 21:48:12</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-51 | FPR-51</td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>380e8780-50a8-44b7-85d6-e6a6455db42c</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check GET "work experience when at least one entry registered" .</p></td>
+                            <td></td>
+                            <td><p>HTTP/1.1 200 OK</br>with body : </br>{</br>    "data": [</br>        {</br>            "id": "Work experience id",</br>            "company": "Company name",</br>            "jobTitle": "Job title",</br>            "fromDate": Experience from date,</br>            "toDate": 	</br>Experience to date,</br>            "comment": "Work experience comment"</br>        }</br>    ]</br>}</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">f5cf2404-5a11-4235-8a71-bb4407465439</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-34</td>
+                        <td rowspan="1">[POST] - Add work experience when employee id is wrong</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 21:53:17</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-52 | FPR-52</td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>a6f08643-bf5d-4307-9441-e6d01b3e6bac</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check POST "ADD employee work experience when employee id not found" .</p></td>
+                            <td><p>{</br>    "id": "",</br>    "company": "Company 011",</br>    "title": "QA Tester",</br>    "fromDate": "2022-04-01",</br>    "toDate": "2024-12-24",</br>    "comment": "work experience current work"  </br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">bb3c5ddf-25e1-4e3c-937b-a3923e3142d1</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-35</td>
+                        <td rowspan="1">[POST] - Add work experience when mandatory fields are missing</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 22:14:18</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-52 | FPR-52</td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>6928184f-4eb2-4ee7-bc47-090904327037</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check POST "ADD employee work experience when mandatory fields are missing" .</p></td>
+                            <td><p>{</br>    "id": "",</br>    "company": "",</br>    "title": "",</br>    "fromDate": "2022-04-01",</br>    "toDate": "2024-12-24",</br>    "comment": "work experience current work"  </br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>    "error": {</br>        "status": "404",</br>        "text": "company must not be empty"</br>    }</br>}</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">ae305430-5636-49ed-b090-c28a998934a1</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-56</td>
+                        <td rowspan="1">[DELETE] - DELETE employee work experience when record not found</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-16-2022 12:07:18</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-54 | FPR-54</td>
+                        <td rowspan="1">05-16-2022 12:06:55</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>f04bb54f-8b86-4fc2-a600-1ef1060738f4</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check DELETE "DELETE employee work experience when record not found" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "seqId":""</br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Work Experience Record Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">c7892918-31a3-4905-bdbb-35a4c1b79b03</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-55</td>
+                        <td rowspan="1">[DELETE] - DELETE employee work experience when user not found</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-16-2022 12:11:40</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-54 | FPR-54</td>
+                        <td rowspan="1">05-16-2022 12:06:55</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>fa1edba8-4aa3-4753-9320-e7fce9142e23</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check DELETE "DELETE employee work experience when user not found" .</p></td>
+                            <td><p>{</br>    "id": "",</br>    "seqId":{{seqId}}</br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Employee Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="1">755df255-86e3-4b9d-8daa-f303289e3d33</td>
+                        <td rowspan="1">API work experience testing</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">FPR-46</td>
+                        <td rowspan="1">[PUT] - EDIT employee work experience when record not found</td>
+                        <td rowspan="1">Final Project RAZVAN</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">Unscheduled</td>
+                        <td rowspan="1">Medium</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1">05-15-2022 22:27:16</td>
+                        <td rowspan="1">FAIL</td>
+                        <td rowspan="1">FPR-54 | FPR-54</td>
+                        <td rowspan="1">05-15-2022 21:41:11</td>
+                        <td rowspan="1">Razvan Olaru</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1">CREATED</td>
+                        <td rowspan="1"></td>
+                        <td rowspan="1"></td>
+                        
+                            <td>6fef9081-a101-4d64-8c40-35aa28a0b6fc</td>
+                            <td>1</td>
+                            <td><p>Open Postman collection and check PUT "EDIT employee work experience when record not found" .</p></td>
+                            <td><p>{</br>    "id": 7,</br>    "seqId": "aade",</br>    "company": "Company 011",</br>    "title": "QA Tester",</br>    "fromDate": "2022-04-01",</br>    "toDate": "2024-12-24",</br>    "comment": "work experience current work"  </br>}</p></td>
+                            <td><p>HTTP/1.1 404 Not Found</br>{</br>  "error": "Work Experience Record Not Found"</br>}</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                
+            
+            </tbody>
+        </table>
+    </body>
+</html>

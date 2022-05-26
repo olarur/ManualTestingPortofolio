@@ -1,0 +1,1571 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>ZFJ - Html Report for Executions</title>
+        <script type="text/javascript">
+        function altRows ( id ) {
+            if ( document.getElementsByTagName ) {
+                var table = document.getElementById ( id ) ;
+                var rows = table.getElementsByTagName ( "tr" ) ;
+                for ( i = 0 ; i < rows.length ; i ++ ) {
+                    if ( i % 2 == 0 ) {
+                        rows[ i ].className = "evenrowcolor" ;
+                    } else {
+                        rows[ i ].className = "oddrowcolor" ;
+                    }
+                }
+            }
+        }
+        window.onload = function ( ) {
+            altRows ( 'alternatecolor' ) ;
+        }
+        </script>
+        <style type="text/css">
+        table.altrowstable {
+            font-family : verdana, arial, sans-serif ;
+            font-size : 9px ;
+            padding-left : 50px ;
+            color : #333333 ;
+            border-width : 1px ;
+            border-color : #a9c6c9 ;
+            border-collapse : collapse ;
+        }
+        table.altrowstable th {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        table.altrowstable thead {
+            font-weight : bold ;
+        }
+        table.altrowstable td {
+            border-width : 1px ;
+            padding : 8px ;
+            border-style : solid ;
+            border-color : #a9c6c9 ;
+        }
+        .oddrowcolor {
+            background-color : #d4e3e5 ;
+        }
+        .evenrowcolor {
+            background-color : none ;
+        }
+        </style>
+    </head>
+    <body>
+
+        <table class="altrowstable" id="alternatecolor" border="1" cellspacing="0" cellpadding="0" style="padding-left : 50 px ; overflow-y = scroll ;">
+            <thead>
+                <th>ExecutionId</th>
+                <th>Cycle</th>
+                <th>Folder Name</th>
+                <th>Issue Key</th>
+                <th>Test Summary</th>
+                <th>Project</th>
+                <th>Component</th>
+                <th>Version</th>
+                <th>Priority</th>
+                <th>Executed By</th>
+                <th>Executed On</th>
+                <th>Execution Status</th>
+                <th>Execution Defect(s)</th>
+                <th>Creation Date</th>
+                <th>Assigned To</th>
+                <th>Execution Custom Field</th>
+                <th>Work Flow Status</th>
+                <th>Total Execution Time</th>
+                <th>Total Logged Time</th>
+                <th>StepId</th>
+                <th>OrderId</th>
+                <th>Step</th>
+                <th>Test Data</th>
+                <th>Expected Result</th>
+                <th>Step Result</th>
+                <th>Comment</th>
+                <th>Test Step Custom Field</th>
+            </thead>
+            <tbody>
+            
+                
+                    <tr>
+                        <td rowspan="6">e2af62f6-be3b-4093-bafe-9664e2817f22</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-15</td>
+                        <td rowspan="6">[Work experience] - Verify that company field is a mandatory field.</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-10-2022 10:56:13</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">05-10-2022 10:51:31</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>9d4e8aa3-79f6-424a-b929-ea004d8f9801</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>4da77a90-21f8-4525-ab42-17d644ef29cb</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ce22eb04-5bb1-49f4-a4aa-a505210ca9b5</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d50c0091-376a-433a-8264-1321e365f0c8</td>
+                            <td>4</td>
+                            <td><p>Fill in all fields except Company.</p></td>
+                            <td></td>
+                            <td><p>All fields are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>44171389-6349-4050-8558-ae91a7d52d31</td>
+                            <td>5</td>
+                            <td><p>Press Save button.</p></td>
+                            <td></td>
+                            <td><p>A warning message "Required" is displayed below Company field.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>67370fbc-1734-4127-a9a1-ee6cf4842d30</td>
+                            <td>6</td>
+                            <td><p>Fill in Company field and press Save.</p></td>
+                            <td></td>
+                            <td><p>Company field is editable.</br>New Work Experience is added.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">8de638e3-303d-4083-9b96-79cac0a6784f</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-17</td>
+                        <td rowspan="6">[Work experience] - Verify that job title field allows max 100 characters and is string type.</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-10-2022 10:43:18</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">05-10-2022 10:36:23</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>53b7a499-4537-4f93-aebe-c528ea26c6ce</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>7650ff7b-c9e2-46c5-ac21-c1bdbc991822</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>bcb90cc2-c862-4db4-a4a0-c98ece8b7483</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>440d57ef-7158-4681-951c-362848a9d450</td>
+                            <td>4</td>
+                            <td><p>Fill in Job title field using all type of characters (numbers, alphabetical and special).</p></td>
+                            <td></td>
+                            <td><p>All type of characters are permitted.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c429ada0-4774-4710-a15f-6ebb94798e6c</td>
+                            <td>5</td>
+                            <td><p>Fill in a value with 100 characters.</p></td>
+                            <td></td>
+                            <td><p>100 characters are allowed.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>9970e02b-4fd7-4ed8-a9ab-74ed776a9bb5</td>
+                            <td>6</td>
+                            <td><p>Fill in a value with 101 characters.</p></td>
+                            <td></td>
+                            <td><p>When 100 characters are reached, user cannot type more characters. </p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">02de4246-b3a5-4769-a32d-2578b788efb0</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-18</td>
+                        <td rowspan="6">[Work experience] - Verify that job title field is a mandatory field.</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-10-2022 10:49:59</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">05-10-2022 10:36:23</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>7bff19e9-fab8-498b-baf3-c06f4eb67ce1</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>10ae9a76-82cd-495b-be99-d55bba020a41</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7194d343-ab62-447f-8489-93883b34976d</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>67375ca5-b1f2-49c5-af13-65ea0b6cc2e2</td>
+                            <td>4</td>
+                            <td><p>Fill in all fields except Job title.</p></td>
+                            <td></td>
+                            <td><p>All fields are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>147984f1-5e00-462b-a058-033754782b79</td>
+                            <td>5</td>
+                            <td><p>Press Save button.</p></td>
+                            <td></td>
+                            <td><p>A warning message "Required" is displayed below Job tile field.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2f8b95e1-88be-49b1-8d22-dd782fc8fa8b</td>
+                            <td>6</td>
+                            <td><p>Fill in Job title field and press Save.</p></td>
+                            <td></td>
+                            <td><p>Job title field is editable.</br>New Work Experience is added.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">e18014fd-f800-49de-a7bc-a73c1b83041c</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-16</td>
+                        <td rowspan="6">[Work experience] - Verify that company field allows max 100 characters and is string type.</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-10-2022 10:59:35</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">05-10-2022 10:51:31</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>ab16c686-2a3d-477c-81a8-e90f690c5283</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>4c53d3f3-03c7-4ff9-b106-8f67db35d40a</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>500e246a-cd41-4088-9742-9b448e7e40e1</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f4092be6-0a47-4122-a27a-518553ff56f7</td>
+                            <td>4</td>
+                            <td><p>Fill in Company field using all type of characters (numbers, alphabetical and special).</p></td>
+                            <td></td>
+                            <td><p>All type of characters are permitted.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ecc9c36b-0e2c-4e53-b1e8-0e3859d8e10a</td>
+                            <td>5</td>
+                            <td><p>Fill in a value with 100 characters.</p></td>
+                            <td></td>
+                            <td><p>100 characters are allowed.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>cade0153-3102-485c-97fd-5029dd656de8</td>
+                            <td>6</td>
+                            <td><p>Fill in a value with 101 characters.</p></td>
+                            <td></td>
+                            <td><p>When 100 characters are reached, user cannot type more characters. </p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="5">2fb27bf5-6347-4040-8125-81ef3d45a535</td>
+                        <td rowspan="5">Ad hoc</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">FPR-22</td>
+                        <td rowspan="5">[Work experience] - Verify that From and To fields are optional</td>
+                        <td rowspan="5">Final Project RAZVAN</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Unscheduled</td>
+                        <td rowspan="5">Medium</td>
+                        <td rowspan="5">Razvan Olaru</td>
+                        <td rowspan="5">05-10-2022 12:33:23</td>
+                        <td rowspan="5">PASS</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">05-10-2022 10:36:23</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        
+                            <td>8fd385de-997c-4b85-b2e4-76b201e52574</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>0efcfb14-647d-4418-8fd8-c0f2ecf933cf</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ad357fb7-4791-431e-966d-e74be3f1317f</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b6a476b3-1117-4873-b9a7-3c75135bb3d7</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>11914199-6b0f-40c4-9112-fa6b5d589790</td>
+                            <td>5</td>
+                            <td><p>Press save.</p></td>
+                            <td></td>
+                            <td><p>New work experience is added.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">aab0e7d3-d4c4-48d6-98ee-19f27dd94654</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-21</td>
+                        <td rowspan="6">[Work experience] - Verify that From and To fields don&#x27;t allow future dates</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-10-2022 12:30:14</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">05-10-2022 10:36:23</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>f34cc55a-31bf-402a-a446-2972ff0c16ea</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>d693425e-c6fb-45bf-8ae9-1ec66d90bf78</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f310ca80-6b76-4f6e-88ae-07befe3f7b03</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6000e7b7-ea9e-4a00-9007-585b48db71aa</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d4f2a7db-d763-455d-9b42-2af28b6afe78</td>
+                            <td>5</td>
+                            <td><p>Select date for From field using calendar icon. </p></td>
+                            <td><p>Choose a future date.</p></td>
+                            <td><p>Future dates are not allowed.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4f8c938a-29ae-4f16-a81b-8752a47909a3</td>
+                            <td>6</td>
+                            <td><p>Select date for To field using calendar icon. </p></td>
+                            <td><p>Choose a future date.</p></td>
+                            <td><p>Future dates are not allowed.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="3">9cc1b5eb-398f-4a93-9f7a-90b1b6d83a19</td>
+                        <td rowspan="3">Ad hoc</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">FPR-27</td>
+                        <td rowspan="3">[Work experience] - Verify that work experience can be deleted</td>
+                        <td rowspan="3">Final Project RAZVAN</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">Unscheduled</td>
+                        <td rowspan="3">Medium</td>
+                        <td rowspan="3">Razvan Olaru</td>
+                        <td rowspan="3">05-11-2022 12:02:27</td>
+                        <td rowspan="3">PASS</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3">05-10-2022 10:36:23</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        
+                            <td>43daf7ec-0e7c-439c-a199-5483b759c686</td>
+                            <td>1</td>
+                            <td><p>Precondition: </br>Run test case #FPR-22 </p></td>
+                            <td></td>
+                            <td></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>218cb7f8-384f-4825-930c-62bfe59436db</td>
+                            <td>2</td>
+                            <td><p>Verify delete button is visible.</p></td>
+                            <td></td>
+                            <td><p>Delete button is visible and selectable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e3b9ae18-d97a-46db-88a5-64f97b23f747</td>
+                            <td>3</td>
+                            <td><p>Select added entry (select check-box) and press delete button.</p></td>
+                            <td></td>
+                            <td><p>Entry is selected. Entry is successfully delete and user will be inform that entry was deleted.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">4e8c7a85-2a73-4d11-bd23-4b2d0f884f6d</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-25</td>
+                        <td rowspan="6">[Work experience] - Verify that multiple entries can be added.</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-11-2022 11:36:15</td>
+                        <td rowspan="6">PASS</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">05-10-2022 10:36:23</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>071f7b86-30b4-46d2-8fea-4e53fee9841f</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>714475bd-5360-4f90-841b-5c2d5834fd8a</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>0b62a90f-3993-4c19-a224-b81abe883ad6</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>eec34dc9-b89a-4f47-a861-4fae3cdadaaa</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ca72b844-5dac-4416-893b-bc5186151d1d</td>
+                            <td>5</td>
+                            <td><p>Press Save button.</p></td>
+                            <td></td>
+                            <td><p>New work experienced is saved.</br>User is informed that information was saved.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>476c1020-7abf-4565-8c82-d1cbcd3dfdcb</td>
+                            <td>6</td>
+                            <td><p>Repeat steps 3-5.</p></td>
+                            <td></td>
+                            <td><p>Many entries were added.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="5">3f3bab40-5c90-4e57-90af-febb6342df6a</td>
+                        <td rowspan="5">Ad hoc</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">FPR-30</td>
+                        <td rowspan="5">[Work experience] - Verify &quot;add&quot; and &quot;delete&quot; buttons visibility</td>
+                        <td rowspan="5">Final Project RAZVAN</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Unscheduled</td>
+                        <td rowspan="5">Medium</td>
+                        <td rowspan="5">Razvan Olaru</td>
+                        <td rowspan="5">05-11-2022 12:11:55</td>
+                        <td rowspan="5">PASS</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">05-10-2022 10:36:23</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        
+                            <td>9f144ede-58e9-4dc0-b5ad-be2168e399ce</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>9735bed2-23c7-4a79-9289-09abc70d5168</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d819e7f9-4bc7-4160-b781-b31dc0bc93ed</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and check if "add" button is visible.</p></td>
+                            <td></td>
+                            <td><p>"Add" button is visible and selectable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>48deca1b-36dc-47be-8649-39dd72be8e8f</td>
+                            <td>4</td>
+                            <td><p>Check if delete button is visible when no entry is added.</p></td>
+                            <td></td>
+                            <td><p>"Delete" button is hidden.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f4dacd4a-f80e-4e3a-b9ea-5777b58055c4</td>
+                            <td>5</td>
+                            <td><p>Check if "delete" button is visible when at least one entry is added.</p></td>
+                            <td></td>
+                            <td><p>"Delete" button is visible and selectable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="4">47f1b8ea-c1b2-4dd7-9001-edb38edd9704</td>
+                        <td rowspan="4">Ad hoc</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">FPR-28</td>
+                        <td rowspan="4">[Work experience] - Verify that multiple work experiences can be deleted</td>
+                        <td rowspan="4">Final Project RAZVAN</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">Unscheduled</td>
+                        <td rowspan="4">Medium</td>
+                        <td rowspan="4">Razvan Olaru</td>
+                        <td rowspan="4">05-11-2022 12:22:47</td>
+                        <td rowspan="4">PASS</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4">05-10-2022 10:36:23</td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="4"></td>
+                        
+                            <td>705f63b2-9d46-4a15-81c2-e74e86882020</td>
+                            <td>1</td>
+                            <td><p>Precondition: </br>Run test case #FPR-22 </p></td>
+                            <td></td>
+                            <td></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>a899c349-b345-462a-9531-b0c30a338515</td>
+                            <td>2</td>
+                            <td><p>Add multiple work experiences (FPR-22).</p></td>
+                            <td></td>
+                            <td><p>Multiple work experiences were added.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>007d67f1-6f93-43fd-a388-0d75abc565f3</td>
+                            <td>3</td>
+                            <td><p>Verify delete button is visible.</p></td>
+                            <td></td>
+                            <td><p>Delete button is visible and selectable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>982486a3-08b6-460e-9e0e-ce6bf41ad2c6</td>
+                            <td>4</td>
+                            <td><p>Select multiple entries (select check-box) and press delete button.</p></td>
+                            <td></td>
+                            <td><p>Selected entries are successfully deleted. User will be inform that entries were deleted. </p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="5">b9afb777-a27d-4e11-b33a-d457c1fd48b7</td>
+                        <td rowspan="5">Ad hoc</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">FPR-24</td>
+                        <td rowspan="5">[Work experience] - Verify that Comment field is optional</td>
+                        <td rowspan="5">Final Project RAZVAN</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">Unscheduled</td>
+                        <td rowspan="5">Medium</td>
+                        <td rowspan="5">Razvan Olaru</td>
+                        <td rowspan="5">05-11-2022 11:31:19</td>
+                        <td rowspan="5">PASS</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5">05-10-2022 10:36:23</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        
+                            <td>c026ebc7-c055-4dee-b29c-1601814937d3</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>27b89970-6781-44bf-ac98-9d31cb0640e8</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>99e9c5fe-b7b5-42ea-9e18-5bf31fdc7541</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>7b3be9ee-dbbb-4c47-8ba1-ba201be23cf5</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6d0575bd-5091-4ce9-8017-7426930d2d07</td>
+                            <td>5</td>
+                            <td><p>Press Save button.</p></td>
+                            <td></td>
+                            <td><p>New work experienced is saved.</br>User is informed that information was saved.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="2">9c56a8bd-326f-4b57-8c25-25b2a245a345</td>
+                        <td rowspan="2">Ad hoc</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">FPR-29</td>
+                        <td rowspan="2">[Work experience] - Verify that &quot;select all&quot; check box works as expected</td>
+                        <td rowspan="2">Final Project RAZVAN</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">Unscheduled</td>
+                        <td rowspan="2">Medium</td>
+                        <td rowspan="2">Razvan Olaru</td>
+                        <td rowspan="2">05-11-2022 12:26:32</td>
+                        <td rowspan="2">PASS</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">05-10-2022 10:36:23</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                        
+                            <td>abc3d8ee-aa08-4caa-bffc-3c7397547637</td>
+                            <td>1</td>
+                            <td><p>Precondition: </br>Run test case #FPR-22 </p></td>
+                            <td></td>
+                            <td></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>e590393b-ba84-450b-a9da-1f55ee01591f</td>
+                            <td>2</td>
+                            <td><p>Check "select all" checkbox.</p></td>
+                            <td></td>
+                            <td><p>All entries are selected.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="7">924c052b-67c7-445a-877a-c9ca34d3d12f</td>
+                        <td rowspan="7">Ad hoc</td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7">FPR-20</td>
+                        <td rowspan="7">[Work experience] - Verify that To field is date type</td>
+                        <td rowspan="7">Final Project RAZVAN</td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7">Unscheduled</td>
+                        <td rowspan="7">Medium</td>
+                        <td rowspan="7">Razvan Olaru</td>
+                        <td rowspan="7">05-10-2022 12:18:58</td>
+                        <td rowspan="7">FAIL</td>
+                        <td rowspan="7">FPR-38,FPR-39 | FPR-38,FPR-39</td>
+                        <td rowspan="7">05-10-2022 10:36:23</td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        
+                            <td>896f680c-8c78-46cf-8bac-1f00e974ffe9</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>9a7bffb7-5942-424d-8549-98461906a6ea</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>57320a44-d979-46b8-a5ed-6ca54b6dab76</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>6306fb6c-d0f0-48de-bae8-32a7041c06ea</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>f7c6ed87-0409-45e6-95da-9fd5c213eff6</td>
+                            <td>5</td>
+                            <td><p>Type date into To field.</p></td>
+                            <td><p>Type various date formats: </br>dd-mm-yyyy</br>dd.mm.yyyy</br>yyyy/mm/dd</p></td>
+                            <td><p>User should not be allowed to type date.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5f4a7b5a-b8b1-441c-a59c-8e4c3f33323c</td>
+                            <td>6</td>
+                            <td><p>Select date for To field using calendar icon. Choose different month and year than current date.</p></td>
+                            <td></td>
+                            <td><p>Calendar icon is enabled for selection. Year and months can be changed. To field is populated with selected date in format yyyy/mm/dd.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>28d2c85b-ab12-409f-8031-b2e4610c2da6</td>
+                            <td>7</td>
+                            <td><p>Press Save button.</p></td>
+                            <td></td>
+                            <td><p>New Work Experience is added and To value is visible. </p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">2daf9418-4bf5-424c-b661-91a5a7d72a7d</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-23</td>
+                        <td rowspan="6">[Work experience] - Verify that Comment field allows maximum 255 characters</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-11-2022 11:28:31</td>
+                        <td rowspan="6">FAIL</td>
+                        <td rowspan="6">FPR-40 | FPR-40,FPR-40</td>
+                        <td rowspan="6">05-10-2022 10:36:23</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>34154747-fe81-442a-a218-46e526a07c4e</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>c3e69e9a-288b-4f21-b74a-5b609f1f4b8b</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>e64d3a21-11e3-486b-828d-b11447edda1a</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5e9f2704-833e-4e37-badf-d9a227bd7244</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>66b1fbdd-1bae-49b5-b25c-bb05333d920f</td>
+                            <td>5</td>
+                            <td><p>Fill in 255 characters into Comment field.</p></td>
+                            <td><p>Use special characters, numbers and letters.</p></td>
+                            <td><p>255 characters were allowed.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>06080a10-09f5-4243-b2b4-2b9486aa1edb</td>
+                            <td>6</td>
+                            <td><p>Fill in 256 characters into Comment field.</p></td>
+                            <td><p>Use special characters, numbers and letters.</p></td>
+                            <td><p>A message is displayed. Permitted length is exceeded.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="6">e95553e8-315a-46c4-a099-e9865a56a370</td>
+                        <td rowspan="6">Ad hoc</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">FPR-41</td>
+                        <td rowspan="6">[Work experience] - Verify that &quot;From&quot; and &quot;To&quot; fields don&#x27;t allows future date</td>
+                        <td rowspan="6">Final Project RAZVAN</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6">Unscheduled</td>
+                        <td rowspan="6">Medium</td>
+                        <td rowspan="6">Razvan Olaru</td>
+                        <td rowspan="6">05-11-2022 12:53:24</td>
+                        <td rowspan="6">FAIL</td>
+                        <td rowspan="6">FPR-42,FPR-43 | FPR-42,FPR-43</td>
+                        <td rowspan="6">05-11-2022 12:36:13</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        
+                            <td>53de9147-b8e0-42b0-97c6-db0cdf502055</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>9af6e2eb-ea70-4005-aef9-868bc025c3a2</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>595fb0de-1388-4605-b38f-257c52bfab6c</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>74b4c952-3d52-49cb-9f35-15326353e32b</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>ed917db4-23c5-4aaf-96be-5f91cccc4664</td>
+                            <td>5</td>
+                            <td><p>Select a future date for "From" field using calendar icon.</p></td>
+                            <td></td>
+                            <td><p>User should not be allowed to select a future date.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>4b819d67-4615-42ab-8a4d-cfad4f612616</td>
+                            <td>6</td>
+                            <td><p>Select a future date for "To" field using calendar icon.</p></td>
+                            <td></td>
+                            <td><p>User should not be allowed to select a future date.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="11">24611192-ce69-4f80-80e1-6d884d3f79d6</td>
+                        <td rowspan="11">Ad hoc</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">FPR-26</td>
+                        <td rowspan="11">[Work experience] - Verify that work experience can be edited</td>
+                        <td rowspan="11">Final Project RAZVAN</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11">Unscheduled</td>
+                        <td rowspan="11">Medium</td>
+                        <td rowspan="11">Razvan Olaru</td>
+                        <td rowspan="11">05-11-2022 11:58:04</td>
+                        <td rowspan="11">FAIL</td>
+                        <td rowspan="11">FPR-40,FPR-36,FPR-37,FPR-38,FPR-39 | FPR-38,FPR-36,FPR-40,FPR-39,FPR-37,FPR-40</td>
+                        <td rowspan="11">05-10-2022 10:36:23</td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        <td rowspan="11"></td>
+                        
+                            <td>c2f38299-d86c-4d2b-a133-2b6104955d3e</td>
+                            <td>1</td>
+                            <td><p>Precondition: </br>Run test case #FPR-22 </p></td>
+                            <td></td>
+                            <td></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>005895db-ed21-47af-a5a1-7ef3a3fc1efc</td>
+                            <td>2</td>
+                            <td><p>In Work experience view click on one work experience link.</p></td>
+                            <td></td>
+                            <td><p>Work experience edit form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>c1968a29-1b99-45de-b2c9-d4554612f647</td>
+                            <td>3</td>
+                            <td><p>Modify Company value. Add a value with 100 characters</p></td>
+                            <td><p>Use special, alphabetic and numeric characters.</p></td>
+                            <td><p>Company field allows 100 characters.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8e1b8b2b-7bf7-42bc-90a4-59d0eeeb6e0b</td>
+                            <td>4</td>
+                            <td><p>Add a value with 101 characters into Company field.</p></td>
+                            <td><p>Use special, alphabetic and numeric characters.</p></td>
+                            <td><p>Company field allows only 100 characters, cannot type 101st character.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b4db0a17-6b99-47e9-bd79-11f181f9a546</td>
+                            <td>5</td>
+                            <td><p>Modify Job title value. Add a value with 100 characters.</p></td>
+                            <td><p>Use special, alphabetic and numeric characters.</p></td>
+                            <td><p>Job title field is editable and allows 100 characters. New value was added.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b096d11f-cabe-44f5-b616-8a0675691622</td>
+                            <td>6</td>
+                            <td><p>Add a value with 101 characters into Job title field.</p></td>
+                            <td><p>Use special, alphabetic and numeric characters.</p></td>
+                            <td><p>Job title field allows only 100 characters, cannot type 101st character.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>52b2ed21-99ce-40c0-a821-9b96a8dd7ce5</td>
+                            <td>7</td>
+                            <td><p>Modify From and To values typing the value.</p></td>
+                            <td><p>Use a different format:</br>dd-mm-yyyy</p></td>
+                            <td><p>From and To fields does not allow typing.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>d9a3313b-986d-4641-921b-8e213360d2b6</td>
+                            <td>8</td>
+                            <td><p>Modify From and To values using calendar icon. Choose different year and month.</p></td>
+                            <td></td>
+                            <td><p>From and To values are editable. New values are added in yyyy/mm/dd format.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>1156e424-c52d-4bef-bea7-27f8cd2e7b0c</td>
+                            <td>9</td>
+                            <td><p>Modify Comment value. Add a value with 255 characters.</p></td>
+                            <td><p>Use special, alphabetic and numeric characters.</p></td>
+                            <td><p>Comment field is editable and allows 255 characters.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b28241fc-e068-4419-99da-44bb5ad5485b</td>
+                            <td>10</td>
+                            <td><p>Add a value with 256 characters into Comment field.</p></td>
+                            <td></td>
+                            <td><p>Comment field doesn't allow more than 255 characters. A warning message is displayed.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>654f97b3-f133-4160-ac08-968e198915f4</td>
+                            <td>11</td>
+                            <td><p>Click Save button.</p></td>
+                            <td></td>
+                            <td><p>User is informed that modifications were saved.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+                
+                    <tr>
+                        <td rowspan="7">37943bff-a174-431c-b9bf-d2defa26924a</td>
+                        <td rowspan="7">Ad hoc</td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7">FPR-19</td>
+                        <td rowspan="7">[Work experience] - Verify that From field is date type</td>
+                        <td rowspan="7">Final Project RAZVAN</td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7">Unscheduled</td>
+                        <td rowspan="7">Medium</td>
+                        <td rowspan="7">Razvan Olaru</td>
+                        <td rowspan="7">05-10-2022 11:57:20</td>
+                        <td rowspan="7">FAIL</td>
+                        <td rowspan="7">FPR-36,FPR-37 | FPR-36,FPR-37</td>
+                        <td rowspan="7">05-10-2022 10:36:23</td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        
+                            <td>c71e08cb-a57c-4aa9-acff-9e5dc7c8eab8</td>
+                            <td>1</td>
+                            <td><p>Log in to https://opensource-demo.orangehrmlive.com/index.php/auth/login</p></td>
+                            <td><p>Username : Admin </br>Password : admin123</p></td>
+                            <td><p>Login successfully.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        
+                    </tr>
+                    
+                        <tr>
+                            <td>7455bf7c-d221-4aab-84dd-39e5fd6c38e0</td>
+                            <td>2</td>
+                            <td><p>Select My Info tab and Qualifications option (left side menu).</p></td>
+                            <td></td>
+                            <td><p>Qualifications area is visible.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>dd29bfc9-13b6-4334-8b70-308c36e4ed3a</td>
+                            <td>3</td>
+                            <td><p>Go to Work experience section and press Add button.</p></td>
+                            <td></td>
+                            <td><p>Work experience section is visible.</br>Add button is enabled.</br>Add Work Experience form is opened.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>b9d66a48-2928-4dd6-b5e7-e3463ab4b903</td>
+                            <td>4</td>
+                            <td><p>Fill in Company and Job title.</p></td>
+                            <td></td>
+                            <td><p>Company and Job title are editable.</p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>2cdf6ee9-5641-45e5-bdda-9542eb60a67c</td>
+                            <td>5</td>
+                            <td><p>Type date into From field.</p></td>
+                            <td><p>Type various date formats: </br>dd-mm-yyyy</br>dd.mm.yyyy</br>yyyy/mm/dd</p></td>
+                            <td><p>User should not be allowed to type date.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>8816a847-8d36-405c-bb69-b98b7a009948</td>
+                            <td>6</td>
+                            <td><p>Select date for From field using calendar icon. Choose different month and year than current date.</p></td>
+                            <td></td>
+                            <td><p>Calendar icon is enabled for selection. Year and months can be changed. From field is populated with selected date in format yyyy/mm/dd.</p></td>
+                            <td>FAIL</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                        <tr>
+                            <td>5d40cfad-8deb-4664-ab4d-91957793a0e7</td>
+                            <td>7</td>
+                            <td><p>Press Save button.</p></td>
+                            <td></td>
+                            <td><p>New Work Experience is added and From value is visible. </p></td>
+                            <td>PASS</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    
+                
+            
+            </tbody>
+        </table>
+    </body>
+</html>
