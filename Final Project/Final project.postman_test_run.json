@@ -1,0 +1,745 @@
+{
+	"id": "eed00975-30b1-4523-ac35-5a21178fea6a",
+	"name": "Final project",
+	"timestamp": "2022-05-25T14:45:57.249Z",
+	"collection_id": "20059604-a275e970-c60a-43ad-aa64-bb4c97fff216",
+	"folder_id": 0,
+	"environment_id": "20059604-f062a5ce-5df0-488c-8bed-630ef15c561a",
+	"totalPass": 18,
+	"totalFail": 12,
+	"results": [
+		{
+			"id": "6882ec07-c927-44ad-a53e-c68fc9932f4b",
+			"name": "Register OAuth Client",
+			"url": "https://opensource-demo.orangehrmlive.com/index.php/admin/registerOAuthClient",
+			"time": 566,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				566
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "765bdc08-c0a3-46a3-98fd-6ea2207d0eb8",
+			"name": "Get token",
+			"url": "https://opensource-demo.orangehrmlive.com/index.php/oauth/issueToken",
+			"time": 186,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "be508813-3607-4bfb-8115-669aae267a7a",
+			"name": "GET work experience when no entries are registered",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 198,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Employee Not Found": true
+			},
+			"testPassFailCounts": {
+				"Employee Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				198
+			],
+			"allTests": [
+				{
+					"Employee Not Found": true
+				}
+			]
+		},
+		{
+			"id": "3a5ef181-4b71-4cc7-817e-d3729c461be5",
+			"name": "ADD employee work experience",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 175,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				175
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "97853e25-809c-4d9d-b38d-0c5aa07c0331",
+			"name": "GET work experience when at least one entry registered",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6b0f557e-2304-434f-becf-d66104b41f2d",
+			"name": "ADD employee work experience when employee id not found",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 173,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 404. employee id not found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404. employee id not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Status code is 404. employee id not found": false
+				}
+			]
+		},
+		{
+			"id": "a7913166-3b9d-4ca7-a32c-00d56d577c52",
+			"name": "ADD employee work experience when mandatory fields are missing",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 169,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {
+				"Company must not be empty": true
+			},
+			"testPassFailCounts": {
+				"Company must not be empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Company must not be empty": true
+				}
+			]
+		},
+		{
+			"id": "d1d069e5-8f9b-4c28-b541-e557033f5814",
+			"name": "EDIT employee work experience",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 201,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Work experience successfully Updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Work experience successfully Updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				201
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Work experience successfully Updated": true
+				}
+			]
+		},
+		{
+			"id": "de70476f-3710-4fc8-8126-3745a5befbeb",
+			"name": "EDIT employee work experience when user Id not existing",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 171,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 404, user was not found": false,
+				"Employee Not Found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404, user was not found": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Employee Not Found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				171
+			],
+			"allTests": [
+				{
+					"Status code is 404, user was not found": false,
+					"Employee Not Found": false
+				}
+			]
+		},
+		{
+			"id": "61c74420-f5e1-4bf7-af7f-4bb44be9b655",
+			"name": "EDIT employee work experience when record not found",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 194,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 404, user was not found": false,
+				"Work Experience Record Not Found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404, user was not found": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Work Experience Record Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Status code is 404, user was not found": false,
+					"Work Experience Record Not Found": true
+				}
+			]
+		},
+		{
+			"id": "5413ffe3-7b7f-4f40-b228-1af53f3f794a",
+			"name": "DELETE employee work experience",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 176,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Successfully Deleted": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successfully Deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Successfully Deleted": true
+				}
+			]
+		},
+		{
+			"id": "dbc55d7c-b1d2-4192-89dc-dfc7910261e2",
+			"name": "DELETE employee work experience when user not found",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 209,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 404": false,
+				"Employee Not Found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Employee Not Found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Status code is 404": false,
+					"Employee Not Found": false
+				}
+			]
+		},
+		{
+			"id": "d6eb1e5f-7eb1-4d70-b9c0-342906034edd",
+			"name": "DELETE employee work experience when record not found",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/work-experience",
+			"time": 187,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 404": false,
+				"Work Experience Record Not Found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Work Experience Record Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Status code is 404": false,
+					"Work Experience Record Not Found": true
+				}
+			]
+		},
+		{
+			"id": "6e7e36c3-2bd5-4027-a29a-e55a297ed36a",
+			"name": "GET education when no entries are registered",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 225,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Employee Not Found": true
+			},
+			"testPassFailCounts": {
+				"Employee Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				225
+			],
+			"allTests": [
+				{
+					"Employee Not Found": true
+				}
+			]
+		},
+		{
+			"id": "5b01e303-61ee-4b52-ac50-1d7ada31f0e1",
+			"name": "ADD employee education",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 169,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1742042e-bbfb-4894-ab47-ad4dac2159ad",
+			"name": "GET education when at least one entry registered",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 169,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2db066ef-4a4f-4f56-8532-5df054567073",
+			"name": "ADD employee education when employee id not found",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 177,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 404. employee id not found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404. employee id not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Status code is 404. employee id not found": false
+				}
+			]
+		},
+		{
+			"id": "20bec9e5-04d0-4db9-91a4-44281372425f",
+			"name": "ADD employee education when level education missing",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 174,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Employee Education Level Not Found": true
+			},
+			"testPassFailCounts": {
+				"Employee Education Level Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Employee Education Level Not Found": true
+				}
+			]
+		},
+		{
+			"id": "d79d9c98-b1fd-40a6-b91a-86ad3ebd1bb3",
+			"name": "ADD employee education when level education is a string",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 171,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Bad request, level field should not be string": true
+			},
+			"testPassFailCounts": {
+				"Bad request, level field should not be string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				171
+			],
+			"allTests": [
+				{
+					"Bad request, level field should not be string": true
+				}
+			]
+		},
+		{
+			"id": "e63f378d-5619-4280-b027-e8a0dd768a89",
+			"name": "DELETE employee education",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 186,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Successfully Deleted": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successfully Deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Successfully Deleted": true
+				}
+			]
+		},
+		{
+			"id": "1b5584a3-9627-4099-84a4-57a428d216c9",
+			"name": "DELETE employee education when user not found",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 170,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 404": false,
+				"Employee Not Found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Employee Not Found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				170
+			],
+			"allTests": [
+				{
+					"Status code is 404": false,
+					"Employee Not Found": false
+				}
+			]
+		},
+		{
+			"id": "42681410-c8eb-4737-9e60-e6ea22df8acc",
+			"name": "DELETE employee education when record not found",
+			"url": "https://opensource-demo.orangehrmlive.com/api/v1/employee/7/education",
+			"time": 169,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 404": false,
+				"Employee Education Record Not Found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Employee Education Record Not Found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 404": false,
+					"Employee Education Record Not Found": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4397,
+	"collection": {
+		"requests": [
+			{
+				"id": "6882ec07-c927-44ad-a53e-c68fc9932f4b",
+				"method": "POST"
+			},
+			{
+				"id": "765bdc08-c0a3-46a3-98fd-6ea2207d0eb8",
+				"method": "POST"
+			},
+			{
+				"id": "be508813-3607-4bfb-8115-669aae267a7a",
+				"method": "GET"
+			},
+			{
+				"id": "3a5ef181-4b71-4cc7-817e-d3729c461be5",
+				"method": "POST"
+			},
+			{
+				"id": "97853e25-809c-4d9d-b38d-0c5aa07c0331",
+				"method": "GET"
+			},
+			{
+				"id": "6b0f557e-2304-434f-becf-d66104b41f2d",
+				"method": "POST"
+			},
+			{
+				"id": "a7913166-3b9d-4ca7-a32c-00d56d577c52",
+				"method": "POST"
+			},
+			{
+				"id": "d1d069e5-8f9b-4c28-b541-e557033f5814",
+				"method": "PUT"
+			},
+			{
+				"id": "de70476f-3710-4fc8-8126-3745a5befbeb",
+				"method": "PUT"
+			},
+			{
+				"id": "61c74420-f5e1-4bf7-af7f-4bb44be9b655",
+				"method": "PUT"
+			},
+			{
+				"id": "5413ffe3-7b7f-4f40-b228-1af53f3f794a",
+				"method": "DELETE"
+			},
+			{
+				"id": "dbc55d7c-b1d2-4192-89dc-dfc7910261e2",
+				"method": "DELETE"
+			},
+			{
+				"id": "d6eb1e5f-7eb1-4d70-b9c0-342906034edd",
+				"method": "DELETE"
+			},
+			{
+				"id": "6e7e36c3-2bd5-4027-a29a-e55a297ed36a",
+				"method": "GET"
+			},
+			{
+				"id": "5b01e303-61ee-4b52-ac50-1d7ada31f0e1",
+				"method": "POST"
+			},
+			{
+				"id": "1742042e-bbfb-4894-ab47-ad4dac2159ad",
+				"method": "GET"
+			},
+			{
+				"id": "2db066ef-4a4f-4f56-8532-5df054567073",
+				"method": "POST"
+			},
+			{
+				"id": "20bec9e5-04d0-4db9-91a4-44281372425f",
+				"method": "POST"
+			},
+			{
+				"id": "d79d9c98-b1fd-40a6-b91a-86ad3ebd1bb3",
+				"method": "POST"
+			},
+			{
+				"id": "e63f378d-5619-4280-b027-e8a0dd768a89",
+				"method": "DELETE"
+			},
+			{
+				"id": "1b5584a3-9627-4099-84a4-57a428d216c9",
+				"method": "DELETE"
+			},
+			{
+				"id": "42681410-c8eb-4737-9e60-e6ea22df8acc",
+				"method": "DELETE"
+			}
+		]
+	}
+}
