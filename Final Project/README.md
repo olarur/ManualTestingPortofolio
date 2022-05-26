@@ -120,7 +120,7 @@ The following elements are needed to be ready before the test execution phase be
 
 ## 1.6 Test Execution
 
-Test cases are executed on the created test Cycles summaries: 
+Test cases are executed on the created test Cycle. Check summaries bellow:  
 
 * work experience section was tested in cycle [Ad Hoc.html](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Ad%20Hoc%20Testing%20Cycle%20summary.html)
 
@@ -222,4 +222,10 @@ Tracebility matrix examples per story
 
 
 # 2 SQL section
+
+As i couldn't access real OrangeHRM database i created my own DB  for the choosed module. 
+
+![OrangeHRM db diagram](https://user-images.githubusercontent.com/103954630/170485977-cb8ce720-242b-4317-92b8-d0f5ce1adaf8.jpg)
+
+[Check here](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/OrangeHRM_sql.sql) queries done for this project. 
 
