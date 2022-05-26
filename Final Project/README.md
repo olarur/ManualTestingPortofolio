@@ -135,7 +135,10 @@ Test cases are executed on the created test Cycles summaries:
 API tests were written in Postman and contains GET, POST, PUT and DELETE HTTP methods. You can check [collection](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Final%20project.postman_collection.json) and [environment](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/final%20project%20ENV.postman_environment.json)
 With GET token call i stored the bearer token into a variable as current value to be sure will not be shared or stored in cloud. if you want to run the collection you need first to registrate you OAuth Client in Orange HRM. (*you may find more information about this in Orange HRM documentations)* 
 
-All calls contain few tests too. The tests are checking: returned status (as 200 or 400/404 for negative tests) and the response body. For more details please import colletion.  
+All calls contain few tests too. The tests are checking: returned status (as 200 or 400/404 for negative tests) and the response body. For more details please import collection.  
+
+![monitor_API_calls_via_Postman](https://user-images.githubusercontent.com/103954630/170478769-416b0b99-9fed-4afe-ba60-5da7779f729d.jpg)
+
 
 * Bugs have been created based on the failed tests. The complete bug reports can be found here: [Bugs_pdf.pdf](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Bugs_pdf.pdf)
 
@@ -184,18 +187,39 @@ Bugs list:
 * Exit criteria was evaluated and passed
 * The traceability matrix was generated and can be found here: [Traceability_matrix.xlsx](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Traceability_Matrix.xlsx)
 
+![image](https://user-images.githubusercontent.com/103954630/170478653-b6819cf9-9dda-47b1-9ca6-954e5da4e1a9.png)
+
+
+Tracebility matrix examples per story 
+
 ![tracebility_matrix_Work_experience_story](https://user-images.githubusercontent.com/103954630/170475630-0c10d5db-fbfe-4e40-b7a6-9e1ca8cbd90b.jpg)
 
-![tracebility_matrix_Education_story_2](https://user-images.githubusercontent.com/103954630/170475652-6d330c63-77ce-4be0-b6f0-a5de7db56c71.jpg)
+![tracebility_matrix_Education_story_1](https://user-images.githubusercontent.com/103954630/170478552-36c99423-dd2d-442e-9bdb-2961e605a822.jpg)
 
 ![tracebility_matrix_License_story](https://user-images.githubusercontent.com/103954630/170475674-c9d6fa16-7c1c-40a2-a49f-5d5349d6cbe8.jpg)
 
-* Test execution chart was generated, the final report shows.... -> describe the final report
+* Test execution chart was generated: 
 
+![image](https://user-images.githubusercontent.com/103954630/170479904-d93cbd5b-4446-4662-98b6-7d993b267476.png)
 
+![image](https://user-images.githubusercontent.com/103954630/170479819-76a17f92-908b-4e49-9ceb-03222e39e852.png)
 
+![image](https://user-images.githubusercontent.com/103954630/170481295-a375c462-fbf9-4906-8875-1c49b071de1d.png)
 
--> enter here test execution report/chart
+![image](https://user-images.githubusercontent.com/103954630/170480353-774331dd-7381-43a3-9d40-e0f70bc69eda.png)
+
+* Test execution report : 
+   * 2 Sprints (3 weeks/sprint) 
+   * Number of test cases planned for first sprint 17 
+   * Number of test cases runned in the first sprint 17
+   * Number of test cases planned for 2nd sprint 85
+   * Number of test cases executed in 2nd sprint 85 
+   * Number of defects raised in the 1st sprint 12
+   * Number of defects reaised in the 2nd sprint 24
+   * No critical issue opened
+   * High priority issues opened 11
+   * Several times the environment was not functional. 
+
 
 # 2 SQL section
 
