@@ -144,42 +144,42 @@ All calls contain few tests too. The tests are checking: returned status (as 200
 
 Bugs list: 
 
-    *  [API Documentation] Edit API documentation missing for Education section
-    *  Returned message is different than expected one
-    *  "Expiry Date" field should not be earlier than "Issued Date" field 
-    *  "End date" field should not be earlier than "Start Date" field
-    *  "To" field should not be earlier than "From" field 
-    *  "Browse" button is called "Choose file"
-    *  "Select File" allows only one file under 1Mb
-    *  "Issue Date" allows future date
-    *  User is allowed to type date in "Expiry Date" field.
-    *  User is allowed to type date in "Issued Date" field
-    *  "License Number" field is not mandatory
-    *  A value is missing from "License Type" drop-down list
-    *  "Competency" drop-down contains other values 
-    *  "Fluency" drop-down contains other values
-    *  "Comments" field allows only 100 characters
-    *  Field "Years of Experience" not allows all type of characters
-    *  "Skill" drop-down list doesn't match with documented values
-    *  "End Date" allows future date
-    *  "Start Date" allows future date
-    *  User is allowed to type date in "End Date" field
-    *  User is allowed to type date in "Start Date" field
-    *  "GPA/Score" field allows only 25 characters
-    *  "Add Education" form contains one more field 
-    *  "Level" drop-down contains more values 
-    *  400 HTTP response instead of 404 
-    *  No error returned when mandatory field is wrong
-    *  20x HTTP response returned instead of 404 
-    *  GET response is different than expected
-    *  "To" field allows future date
-    *  "From" field allows future date
-    *  "Comment" field allow max 199 characters
-    *  "To" field format is yyyy-mm-dd
-    *  User is allowed to type date in "To" field.
-    *  "From" field format is yyyy-mm-dd
-    *  User is allowed to type date into "From" field.
-    *  [Documentation issue] - Qualification section
+   *  [API Documentation] Edit API documentation missing for Education section
+   *  Returned message is different than expected one
+   *  "Expiry Date" field should not be earlier than "Issued Date" field 
+   *  "End date" field should not be earlier than "Start Date" field
+   *  "To" field should not be earlier than "From" field 
+   *  "Browse" button is called "Choose file"
+   *  "Select File" allows only one file under 1Mb
+   *  "Issue Date" allows future date
+   *  User is allowed to type date in "Expiry Date" field.
+   *  User is allowed to type date in "Issued Date" field
+   *  "License Number" field is not mandatory
+   *  A value is missing from "License Type" drop-down list
+   *  "Competency" drop-down contains other values 
+   *  "Fluency" drop-down contains other values
+   *  "Comments" field allows only 100 characters
+   *  Field "Years of Experience" not allows all type of characters
+   *  "Skill" drop-down list doesn't match with documented values
+   *  "End Date" allows future date
+   *  "Start Date" allows future date
+   *  User is allowed to type date in "End Date" field
+   *  User is allowed to type date in "Start Date" field
+   *  "GPA/Score" field allows only 25 characters
+   *  "Add Education" form contains one more field 
+   *  "Level" drop-down contains more values 
+   *  400 HTTP response instead of 404 
+   *  No error returned when mandatory field is wrong
+   *  20x HTTP response returned instead of 404 
+   *  GET response is different than expected
+   *  "To" field allows future date
+   *  "From" field allows future date
+   *  "Comment" field allow max 199 characters
+   *  "To" field format is yyyy-mm-dd
+   *  User is allowed to type date in "To" field.
+   *  "From" field format is yyyy-mm-dd
+   *  User is allowed to type date into "From" field.
+   *  [Documentation issue] - Qualification section
     
 
 ## 1.7 Test Completion
