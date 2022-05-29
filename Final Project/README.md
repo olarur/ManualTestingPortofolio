@@ -13,7 +13,7 @@ The scope of the final project for ITF Manual Testing Course is to use all gaine
 
 **The final project will be split into 2 sections: [Testing section](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/README.md#1-testing-section) and [SQL section](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/README.md#2-sql-section).**
 
-Tools used: Jira, Postman and MySQL Workbench. 
+Tools used: Jira, Zephyr Squad, Postman and MySQL Workbench. 
 
 # Functional specifications
 
@@ -28,33 +28,33 @@ The Test Plan is designed to describe all details of testing for My Info - Quali
 
 The plan identifies the items to be tested, the features to be tested, the types of testing to be performed, the personnel responsible for testing, the resources and schedule required to complete testing and the risks associated with the plan.
 
-#### 1.1.1 Roles assigned to the project and persons allocated 
-Just me. 
 
-
-#### 1.1.2 Entry criteria defined
+#### 1.1.1 Entry criteria defined
 * The environment is up and running 
 * Role and permissions are allocated 
 * User created 
 
-#### 1.1.3 Exit criteria defined
+#### 1.1.2 Exit criteria defined
 * All test cases set in scope executed 
 * At least 60% of test cases with status passed 
 * No critical defect opened
 * Maximum 10 high defects opened
 * Testing deadline 31.05.2022
 
-#### 1.1.4 Test scope
+#### 1.1.3 Test scope
 
-* __Tests in scope:__ 102
-* __Tests not in scope:__ 0
+* __Tests in scope:__ 
+Review and Functional Testing using Black-box testing and Experience-based testing as Test Design Tehniques. 
 
-#### 1.1.5 Risks detected
+* __Tests not in scope:__ 
+Performance Testing, Stress testing, Volume Testing, Cross browser testing, Mobile testing  and Functional Testing using White-box Testing Tehniques. 
+
+#### 1.1.4 Risks detected
 
 * Project risks: insufficient testers, illness, lack of knowleadge, no developers available to fix the opened bug
 * Product risks: environment not functional and available all the time as is an open source, other peoples can change code for a short period of time, other testers can introduce/delete/change entries and my designed test cases may fail.
 
-#### 1.1.6 Evaluating entry criteria
+#### 1.1.5 Evaluating entry criteria
 
 The entry criterias defined in the Test Planning phase have been achieved and the test process continued. 
 
@@ -97,8 +97,6 @@ are:
 * Black box testing : boundary values, use case testing. 
 * Experience based testing: exploratory testing and check list based testing. 
 
-Non-Functional testing is not in scope. 
-
 **Test cases:**
 
 * UI test cases list: 
@@ -122,7 +120,7 @@ The following elements are needed to be ready before the test execution phase be
 
 Test cases are executed on the created test Cycle. Check summaries bellow:  
 
-* work experience section was tested in cycle [Ad Hoc.html](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Ad%20Hoc%20Testing%20Cycle%20summary.html)
+* work experience section was tested in cycle Ad Hoc.html https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Ad%20Hoc%20Testing%20Cycle%20summary.html
 
 ![image](https://user-images.githubusercontent.com/103954630/170467782-7cffc782-2e40-4f62-b165-6cb742e5d8ed.png)
 
