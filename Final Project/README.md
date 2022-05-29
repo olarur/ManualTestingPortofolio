@@ -120,15 +120,15 @@ The following elements are needed to be ready before the test execution phase be
 
 Test cases are executed on the created test Cycle. Check summaries bellow:  
 
-* work experience section was tested in cycle Ad Hoc.html https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Ad%20Hoc%20Testing%20Cycle%20summary.html
+* work experience section was tested in cycle [Ad Hoc.html](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Ad%20Hoc%20Testing%20Cycle%20summary.html) / [Ad-hoc.csv](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Ad-hoc%20%20cycle%20execution.csv)
 
 ![image](https://user-images.githubusercontent.com/103954630/170467782-7cffc782-2e40-4f62-b165-6cb742e5d8ed.png)
 
-* Education, Skills, Languages, License and Attachments were tested in cycle [UI section](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/UI%20section%20Testing%20Cycle%20summary.html)
+* Education, Skills, Languages, License and Attachments were tested in cycle [UI section.html](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/UI%20section%20Testing%20Cycle%20summary.html) / [UI section.csv](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/UI%20sections%20cycle%20execution.csv)
 
 ![image](https://user-images.githubusercontent.com/103954630/170468569-776b0b9d-abb2-46bb-94af-3cc6be9b64f5.png)
 
-* API tests were executed in 2 cycles [API education testing](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/API%20Education%20Testing%20Cycle%20summary.html) and [API work experience testing](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/API%20Work%20Experience%20Testing%20Cycle%20summary.html)
+* API tests were executed in 2 cycles [API education testing.htm](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/API%20Education%20Testing%20Cycle%20summary.html) / [API education testing.csv](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/API%20education%20cycle%20execution.csv) and [API work experience testing.html](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/API%20Work%20Experience%20Testing%20Cycle%20summary.html) / [API work experience testing.csv](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/API%20work%20experience%20%20cycle%20execution.csv)
 
 API tests were written in Postman and contains GET, POST, PUT and DELETE HTTP methods. You can check [collection](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Final%20project.postman_collection.json) and [environment](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/final%20project%20ENV.postman_environment.json)
 With GET token call i stored the bearer token into a variable as current value to be sure will not be shared or stored in cloud. if you want to run the collection you need first to registrate you OAuth Client in Orange HRM. (*you may find more information about this in Orange HRM documentations)* 
