@@ -47,14 +47,15 @@ The plan identifies the items to be tested, the features to be tested, the types
 #### 1.1.3 Test scope
 
 * __Tests in scope:__ 
-Review and Functional Testing using Black-box testing and Experience-based testing as Test Design Tehniques. 
+Review and Functional Testing using Black-box testing and Experience-based testing as Test Design Tehniques. GUI testing and API testing. 
 
 * __Tests not in scope:__ 
-Performance Testing, Stress testing, Volume Testing, Cross browser testing, Mobile testing  and Functional Testing using White-box Testing Tehniques. 
+Performance Testing, Stress testing, Volume Testing, compatibility testing with multiple browsers, Mobile testing  and Functional Testing using White-box Testing Tehniques. 
 
 #### 1.1.4 Risks detected
 
 * Project risks: insufficient testers, illness, lack of knowleadge, no developers available to fix the opened bugs, environment not functional and available all the time as is an open source, other peoples can change code for a short period of time, other testers can introduce/delete/change entries and my designed test cases may fail.
+* Product risks: validation constraints on the fields might be too restrictive to the end-user
 
 #### 1.1.5 Evaluating entry criteria
 
@@ -126,7 +127,12 @@ The test cases with steps can be viewed here: [test_cases.xls](https://github.co
 
 The following elements are needed to be ready before the test execution phase begins:
 
-* The environment is up and running  and user is created. 
+* Testing environment is up and running: https://opensource-demo.orangehrmlive.com/
+* Access to the testing environment is given: Username : Admin | Password : admin123
+* Cycle summary was created
+* Test cases were added to the cycle summary
+* Postman collection with the dependents API methods was created
+* Authorization token was created for accessing the API. 
 
 ## 1.6 Test Execution
 
@@ -161,6 +167,8 @@ Bug report example :
 
 ![image](https://user-images.githubusercontent.com/103954630/170499873-cf04787d-9728-437a-8dc5-d41aaff84afd.png)
 
+
+Full regression testing is needed after the bugs are fixed.
 
 ## 1.7 Test Completion
 
