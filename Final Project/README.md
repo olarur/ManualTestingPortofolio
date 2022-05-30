@@ -6,7 +6,7 @@ The scope of the final project for ITF Manual Testing Course is to use all gaine
 
 * I created my own documentation in order to find bugs and static testing issues. Original UI Documentation: https://www.orangehrm.com/assets/Files/Complete-Administrative-User-Guide.pdf?url=/Files/Complete-Administrative-User-Guide.pdf
 
-* Created documentation:  [Final Project/Business requirements- Qualifications new feature .docx](https://github.com/olarur/ManualTestingPortofolio/commit/53c5af6acec30139becd7d9b8ad10c6d3148e064#diff29e870575423c74388791e913d14feb6b5b741cc2a2e0b166c4017c711d7ff64) 
+* Created documentation:  [Final Project/Business requirements- Qualifications new feature .docx](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Business%20requirements-%20Qualifications%20new%20feature%20%20-%20fixed%20Issues.docx) 
 
 * API Documentation: https://orangehrm.github.io/orangehrm-api-doc/
 
@@ -38,7 +38,7 @@ The plan identifies the items to be tested, the features to be tested, the types
 * All test cases set in scope executed 
 * At least 60% of test cases with status passed 
 * No critical defect opened
-* Maximum 10 high defects opened
+* Maximum 10 high priority defects opened
 * Testing deadline 31.05.2022
 
 #### 1.1.3 Test scope
@@ -51,8 +51,7 @@ Performance Testing, Stress testing, Volume Testing, Cross browser testing, Mobi
 
 #### 1.1.4 Risks detected
 
-* Project risks: insufficient testers, illness, lack of knowleadge, no developers available to fix the opened bug
-* Product risks: environment not functional and available all the time as is an open source, other peoples can change code for a short period of time, other testers can introduce/delete/change entries and my designed test cases may fail.
+* Project risks: insufficient testers, illness, lack of knowleadge, no developers available to fix the opened bugs, environment not functional and available all the time as is an open source, other peoples can change code for a short period of time, other testers can introduce/delete/change entries and my designed test cases may fail.
 
 #### 1.1.5 Evaluating entry criteria
 
@@ -61,8 +60,6 @@ The entry criterias defined in the Test Planning phase have been achieved and th
 ## 1.2 Test Monitoring and Control
 
 It was done by generating periodic reports that reflect the current status of the tests.
-
-![Project start backlog ](https://user-images.githubusercontent.com/103954630/170469885-6c2bcf84-8bca-45bc-b079-ab6ba89ca513.jpg)
 
 ![sprint in progress](https://user-images.githubusercontent.com/103954630/170469942-cec4231f-d964-4122-8c0d-4cee61f0a3f0.jpg)
 
@@ -76,19 +73,31 @@ It was done by generating periodic reports that reflect the current status of th
 The above [requirements](https://github.com/olarur/ManualTestingPortofolio/commit/53c5af6acec30139becd7d9b8ad10c6d3148e064#diff29e870575423c74388791e913d14feb6b5b741cc2a2e0b166c4017c711d7ff64) were reviewed for the UI Qualifications module. For the API part, I checked [documentation](https://orangehrm.github.io/orangehrm-api-doc/).
 During review, 2 documentation defects were raised. [FPR-14](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/FPR-14.pdf) and [FPR-149](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/FPR-149.pdf)
 Defect FPR-14 was fixed and testing process was executed based on the above [requirements.](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Business%20requirements-%20Qualifications%20new%20feature%20%20-%20fixed%20Issues.docx)  
-Test Conditions found:
+ A subset of Test Conditions found:
  * Check if new work experience can be added 
  * Check if added work can be edited and deleted 
+ * Check if multiple entries can be added/ deleted 
+ * Check mandatory and optional fields 
+ * Check max allowed characters for text fields 
+ * For date fields verify end date cannot be earlier than start date 
+ * Check Date format
+ * Check if future dates are allowed
  * Check if new education can be added 
  * Check if added education can be edited and deleted  
  * Check if new skill can be added 
  * Check if added skill can be edited and deleted 
  * Check if new language can be added 
  * Check if added language can be edited and deleted 
+ * Verify values for drop down fields 
  * Check if new license can be added 
  * Check if added license can be edited and deleted 
  * Check if attachments can be added 
  * Check if added attachments can be edited and deleted 
+ * Verify if all type of attachments are allowed
+ * Check if attachments can be downloaded 
+ * Verify the attachment does not exceed 1MB
+ * Check add/edit/delete actions via UI and via API. 
+
 
 ## 1.4 Test Design
 
