@@ -18,7 +18,10 @@ Tools used: Jira, Zephyr Squad, Postman and MySQL Workbench.
 # Functional specifications
 
 My Info - Qualifications module.
-Business requirements can be found [here](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Business%20requirements-%20Qualifications%20new%20feature%20.docx)
+Business requirements can be found [here](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Business%20requirements-%20Qualifications%20new%20feature%20.docx). 
+
+![image](https://user-images.githubusercontent.com/103954630/171001350-981bd29a-d3bb-41b0-81d8-9a37a591a87b.png)
+
 
 # 1 Testing section
 
