@@ -18,7 +18,7 @@ Tools used: Jira, Zephyr Squad, Postman and MySQL Workbench.
 # Functional specifications
 
 My Info - Qualifications module.
-Business requirements can be found [here](https://github.com/olarur/ManualTestingPortofolio/commit/53c5af6acec30139becd7d9b8ad10c6d3148e064#diff29e870575423c74388791e913d14feb6b5b741cc2a2e0b166c4017c711d7ff64)
+Business requirements can be found [here](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Business%20requirements-%20Qualifications%20new%20feature%20.docx)
 
 # 1 Testing section
 
@@ -70,7 +70,7 @@ It was done by generating periodic reports that reflect the current status of th
 
 ## 1.3 Test Analysis
 
-The above [requirements](https://github.com/olarur/ManualTestingPortofolio/commit/53c5af6acec30139becd7d9b8ad10c6d3148e064#diff29e870575423c74388791e913d14feb6b5b741cc2a2e0b166c4017c711d7ff64) were reviewed for the UI Qualifications module. For the API part, I checked [documentation](https://orangehrm.github.io/orangehrm-api-doc/).
+The above [requirements](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Business%20requirements-%20Qualifications%20new%20feature%20.docx) were reviewed for the UI Qualifications module. For the API part, I checked [documentation](https://orangehrm.github.io/orangehrm-api-doc/).
 During review, 2 documentation defects were raised. [FPR-14](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/FPR-14.pdf) and [FPR-149](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/FPR-149.pdf)
 Defect FPR-14 was fixed and testing process was executed based on the above [requirements.](https://github.com/olarur/ManualTestingPortofolio/blob/main/Final%20Project/Business%20requirements-%20Qualifications%20new%20feature%20%20-%20fixed%20Issues.docx)  
  A subset of Test Conditions found:
